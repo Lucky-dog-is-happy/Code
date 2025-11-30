@@ -1,0 +1,3 @@
+/home/lucky/slambook2/useEigen/build/CMakeFiles/eigenMatrix.dir
+/home/lucky/slambook2/useEigen/build/CMakeFiles/edit_cache.dir
+/home/lucky/slambook2/useEigen/build/CMakeFiles/rebuild_cache.dir

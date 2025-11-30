@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/lucky/slambook2/useEigen/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
