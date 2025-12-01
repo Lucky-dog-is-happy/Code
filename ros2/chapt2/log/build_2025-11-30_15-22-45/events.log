@@ -1,0 +1,240 @@
+[0.000000] (-) TimerEvent: {}
+[0.000159] (demo_cpp_pkg) JobQueued: {'identifier': 'demo_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000192] (demo_python_pkg) JobQueued: {'identifier': 'demo_python_pkg', 'dependencies': OrderedDict()}
+[0.000202] (demo_cpp_pkg) JobStarted: {'identifier': 'demo_cpp_pkg'}
+[0.006533] (demo_python_pkg) JobStarted: {'identifier': 'demo_python_pkg'}
+[0.012218] (demo_cpp_pkg) JobProgress: {'identifier': 'demo_cpp_pkg', 'progress': 'cmake'}
+[0.013095] (demo_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg', '-DCMAKE_INSTALL_PREFIX=/home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg'], 'cwd': '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,25680,0'), ('USER', 'lucky'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/lucky'), ('OLDPWD', '/home/lucky/Code/ros2'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucky'), ('NAME', 'LuckyDog'), ('WSL_INTEROP', '/run/WSL/17923_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin:/mnt/c/Program Files (x86)/STMicroelectronics/stlink_server:/mnt/c/Program Files/STM32CubeCLT_1.19.0:/mnt/c/Program Files/STM32CubeCLT_1.19.0/CMake/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/st-arm-clang/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/Ninja/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STLink-gdb-server/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STM32CubeProgrammer/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Sublime Text/sublime_text.exe:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.3.1/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/Lucky/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2025.2.2/bin:/mnt/c/Users/Lucky/AppData/Roaming/npm:/snap/bin'), ('WT_SESSION', 'e6587af0-c73b-4c52-b373-982782b4e41f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('TMUX_PANE', '%0'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099271] (-) TimerEvent: {}
+[0.166493] (demo_cpp_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199904] (-) TimerEvent: {}
+[0.302994] (-) TimerEvent: {}
+[0.356457] (demo_python_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/demo_python_pkg', 'build', '--build-base', '/home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build', 'install', '--record', '/home/lucky/Code/ros2/chapt2/build/demo_python_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lucky/Code/ros2/chapt2/src/demo_python_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,25680,0', 'USER': 'lucky', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}', 'HOME': '/home/lucky', 'OLDPWD': '/home/lucky/Code/ros2', 'TERM_PROGRAM_VERSION': '3.2a', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lucky/Code/ros2/python/demo_python_pkg/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lucky', 'NAME': 'LuckyDog', 'WSL_INTEROP': '/run/WSL/17923_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin:/mnt/c/Program Files (x86)/STMicroelectronics/stlink_server:/mnt/c/Program Files/STM32CubeCLT_1.19.0:/mnt/c/Program Files/STM32CubeCLT_1.19.0/CMake/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/st-arm-clang/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/Ninja/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STLink-gdb-server/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STM32CubeProgrammer/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Sublime Text/sublime_text.exe:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.3.1/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/Lucky/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2025.2.2/bin:/mnt/c/Users/Lucky/AppData/Roaming/npm:/snap/bin', 'WT_SESSION': 'e6587af0-c73b-4c52-b373-982782b4e41f', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/lucky/Code/ros2/chapt2/build/demo_python_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lucky/Code/ros2/chapt2/build/demo_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages:/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'TMUX_PANE': '%0', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[0.403282] (-) TimerEvent: {}
+[0.484292] (demo_python_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.484849] (demo_python_pkg) StdoutLine: {'line': b'creating ../../build/demo_python_pkg/demo_python_pkg.egg-info\n'}
+[0.485073] (demo_python_pkg) StdoutLine: {'line': b'writing ../../build/demo_python_pkg/demo_python_pkg.egg-info/PKG-INFO\n'}
+[0.485231] (demo_python_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/demo_python_pkg/demo_python_pkg.egg-info/dependency_links.txt\n'}
+[0.485377] (demo_python_pkg) StdoutLine: {'line': b'writing entry points to ../../build/demo_python_pkg/demo_python_pkg.egg-info/entry_points.txt\n'}
+[0.485442] (demo_python_pkg) StdoutLine: {'line': b'writing requirements to ../../build/demo_python_pkg/demo_python_pkg.egg-info/requires.txt\n'}
+[0.485473] (demo_python_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/demo_python_pkg/demo_python_pkg.egg-info/top_level.txt\n'}
+[0.485574] (demo_python_pkg) StdoutLine: {'line': b"writing manifest file '../../build/demo_python_pkg/demo_python_pkg.egg-info/SOURCES.txt'\n"}
+[0.486366] (demo_python_pkg) StdoutLine: {'line': b"reading manifest file '../../build/demo_python_pkg/demo_python_pkg.egg-info/SOURCES.txt'\n"}
+[0.486488] (demo_python_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.486888] (demo_python_pkg) StdoutLine: {'line': b"writing manifest file '../../build/demo_python_pkg/demo_python_pkg.egg-info/SOURCES.txt'\n"}
+[0.486941] (demo_python_pkg) StdoutLine: {'line': b'running build\n'}
+[0.487055] (demo_python_pkg) StdoutLine: {'line': b'running build_py\n'}
+[0.487105] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build\n'}
+[0.487253] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build/lib\n'}
+[0.487359] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build/lib/demo_python_pkg\n'}
+[0.487509] (demo_python_pkg) StdoutLine: {'line': b'copying demo_python_pkg/python_node.py -> /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build/lib/demo_python_pkg\n'}
+[0.487653] (demo_python_pkg) StdoutLine: {'line': b'copying demo_python_pkg/__init__.py -> /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build/lib/demo_python_pkg\n'}
+[0.487847] (demo_python_pkg) StdoutLine: {'line': b'running install\n'}
+[0.488076] (demo_python_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.488440] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg\n'}
+[0.488632] (demo_python_pkg) StdoutLine: {'line': b'copying /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build/lib/demo_python_pkg/python_node.py -> /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg\n'}
+[0.488761] (demo_python_pkg) StdoutLine: {'line': b'copying /home/lucky/Code/ros2/chapt2/build/demo_python_pkg/build/lib/demo_python_pkg/__init__.py -> /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg\n'}
+[0.489094] (demo_python_pkg) StdoutLine: {'line': b'byte-compiling /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg/python_node.py to python_node.cpython-310.pyc\n'}
+[0.489434] (demo_python_pkg) StdoutLine: {'line': b'byte-compiling /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg/__init__.py to __init__.cpython-310.pyc\n'}
+[0.489606] (demo_python_pkg) StdoutLine: {'line': b'running install_data\n'}
+[0.489651] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/share/ament_index\n'}
+[0.489717] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/share/ament_index/resource_index\n'}
+[0.489895] (demo_python_pkg) StdoutLine: {'line': b'creating /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/share/ament_index/resource_index/packages\n'}
+[0.490035] (demo_python_pkg) StdoutLine: {'line': b'copying resource/demo_python_pkg -> /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/share/ament_index/resource_index/packages\n'}
+[0.490226] (demo_python_pkg) StdoutLine: {'line': b'copying package.xml -> /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/share/demo_python_pkg\n'}
+[0.490288] (demo_python_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.491255] (demo_python_pkg) StdoutLine: {'line': b'Copying ../../build/demo_python_pkg/demo_python_pkg.egg-info to /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg-0.0.0-py3.10.egg-info\n'}
+[0.492305] (demo_python_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.503676] (-) TimerEvent: {}
+[0.504488] (demo_python_pkg) StdoutLine: {'line': b'Installing python_node script to /home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/demo_python_pkg\n'}
+[0.505081] (demo_python_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/lucky/Code/ros2/chapt2/build/demo_python_pkg/install.log'\n"}
+[0.521025] (demo_python_pkg) CommandEnded: {'returncode': 0}
+[0.527432] (demo_python_pkg) JobEnded: {'identifier': 'demo_python_pkg', 'rc': 0}
+[0.605243] (-) TimerEvent: {}
+[0.707032] (-) TimerEvent: {}
+[0.810234] (-) TimerEvent: {}
+[0.846959] (demo_cpp_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.911404] (-) TimerEvent: {}
+[1.013144] (-) TimerEvent: {}
+[1.114837] (-) TimerEvent: {}
+[1.216600] (-) TimerEvent: {}
+[1.318414] (-) TimerEvent: {}
+[1.346168] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.418661] (-) TimerEvent: {}
+[1.497762] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.501975] (demo_cpp_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.502211] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.502412] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.504042] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.519118] (-) TimerEvent: {}
+[1.620417] (-) TimerEvent: {}
+[1.664431] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.668443] (demo_cpp_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.668694] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.668944] (demo_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.669956] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.720628] (-) TimerEvent: {}
+[1.759858] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.808127] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.820918] (-) TimerEvent: {}
+[1.922664] (-) TimerEvent: {}
+[2.019385] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.021733] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.022823] (-) TimerEvent: {}
+[2.026430] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.033469] (demo_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.041678] (demo_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.062554] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.063583] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.122975] (-) TimerEvent: {}
+[2.224329] (-) TimerEvent: {}
+[2.324980] (-) TimerEvent: {}
+[2.426612] (-) TimerEvent: {}
+[2.527064] (-) TimerEvent: {}
+[2.628726] (-) TimerEvent: {}
+[2.730396] (-) TimerEvent: {}
+[2.832217] (-) TimerEvent: {}
+[2.934049] (-) TimerEvent: {}
+[3.035831] (-) TimerEvent: {}
+[3.137656] (-) TimerEvent: {}
+[3.239513] (-) TimerEvent: {}
+[3.339898] (-) TimerEvent: {}
+[3.441445] (-) TimerEvent: {}
+[3.541905] (-) TimerEvent: {}
+[3.643735] (-) TimerEvent: {}
+[3.745605] (-) TimerEvent: {}
+[3.847483] (-) TimerEvent: {}
+[3.949323] (-) TimerEvent: {}
+[4.051027] (-) TimerEvent: {}
+[4.078770] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.152181] (-) TimerEvent: {}
+[4.253958] (-) TimerEvent: {}
+[4.355716] (-) TimerEvent: {}
+[4.457544] (-) TimerEvent: {}
+[4.557975] (-) TimerEvent: {}
+[4.659587] (-) TimerEvent: {}
+[4.761321] (-) TimerEvent: {}
+[4.863022] (-) TimerEvent: {}
+[4.964866] (-) TimerEvent: {}
+[5.065570] (-) TimerEvent: {}
+[5.167363] (-) TimerEvent: {}
+[5.269104] (-) TimerEvent: {}
+[5.370949] (-) TimerEvent: {}
+[5.472842] (-) TimerEvent: {}
+[5.574710] (-) TimerEvent: {}
+[5.676124] (-) TimerEvent: {}
+[5.776926] (-) TimerEvent: {}
+[5.878587] (-) TimerEvent: {}
+[5.978987] (-) TimerEvent: {}
+[6.054149] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.079427] (-) TimerEvent: {}
+[6.181160] (-) TimerEvent: {}
+[6.283026] (-) TimerEvent: {}
+[6.384893] (-) TimerEvent: {}
+[6.486753] (-) TimerEvent: {}
+[6.587102] (-) TimerEvent: {}
+[6.688812] (-) TimerEvent: {}
+[6.790633] (-) TimerEvent: {}
+[6.892570] (-) TimerEvent: {}
+[6.994452] (-) TimerEvent: {}
+[7.096205] (-) TimerEvent: {}
+[7.198023] (-) TimerEvent: {}
+[7.299806] (-) TimerEvent: {}
+[7.401614] (-) TimerEvent: {}
+[7.503384] (-) TimerEvent: {}
+[7.605239] (-) TimerEvent: {}
+[7.705637] (-) TimerEvent: {}
+[7.807089] (-) TimerEvent: {}
+[7.908942] (-) TimerEvent: {}
+[8.010868] (-) TimerEvent: {}
+[8.112631] (-) TimerEvent: {}
+[8.214484] (-) TimerEvent: {}
+[8.316363] (-) TimerEvent: {}
+[8.418115] (-) TimerEvent: {}
+[8.519896] (-) TimerEvent: {}
+[8.621779] (-) TimerEvent: {}
+[8.723243] (-) TimerEvent: {}
+[8.824971] (-) TimerEvent: {}
+[8.926562] (-) TimerEvent: {}
+[9.028421] (-) TimerEvent: {}
+[9.130278] (-) TimerEvent: {}
+[9.232131] (-) TimerEvent: {}
+[9.333954] (-) TimerEvent: {}
+[9.435794] (-) TimerEvent: {}
+[9.536250] (-) TimerEvent: {}
+[9.637938] (-) TimerEvent: {}
+[9.739707] (-) TimerEvent: {}
+[9.841395] (-) TimerEvent: {}
+[9.841630] (demo_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.853784] (demo_cpp_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[9.941751] (-) TimerEvent: {}
+[10.018740] (demo_cpp_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.018943] (demo_cpp_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.042186] (-) TimerEvent: {}
+[10.143950] (-) TimerEvent: {}
+[10.179645] (demo_cpp_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.180354] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.208652] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.244577] (-) TimerEvent: {}
+[10.257588] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.257740] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[10.257769] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.258535] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.260039] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.260827] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.265095] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.265241] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.266253] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.266943] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.273180] (demo_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[10.276567] (demo_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg\n'}
+[10.283140] (demo_cpp_pkg) CommandEnded: {'returncode': 0}
+[10.283616] (demo_cpp_pkg) JobProgress: {'identifier': 'demo_cpp_pkg', 'progress': 'build'}
+[10.285009] (demo_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg', '--', '-j20', '-l20'], 'cwd': '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,25680,0'), ('USER', 'lucky'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/lucky'), ('OLDPWD', '/home/lucky/Code/ros2'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucky'), ('NAME', 'LuckyDog'), ('WSL_INTEROP', '/run/WSL/17923_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin:/mnt/c/Program Files (x86)/STMicroelectronics/stlink_server:/mnt/c/Program Files/STM32CubeCLT_1.19.0:/mnt/c/Program Files/STM32CubeCLT_1.19.0/CMake/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/st-arm-clang/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/Ninja/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STLink-gdb-server/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STM32CubeProgrammer/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Sublime Text/sublime_text.exe:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.3.1/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/Lucky/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2025.2.2/bin:/mnt/c/Users/Lucky/AppData/Roaming/npm:/snap/bin'), ('WT_SESSION', 'e6587af0-c73b-4c52-b373-982782b4e41f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('TMUX_PANE', '%0'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble')]), 'shell': False}
+[10.313105] (demo_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o\x1b[0m\n'}
+[10.344873] (-) TimerEvent: {}
+[10.445338] (-) TimerEvent: {}
+[10.547045] (-) TimerEvent: {}
+[10.648889] (-) TimerEvent: {}
+[10.750615] (-) TimerEvent: {}
+[10.850892] (-) TimerEvent: {}
+[10.951195] (-) TimerEvent: {}
+[11.051727] (-) TimerEvent: {}
+[11.152051] (-) TimerEvent: {}
+[11.252347] (-) TimerEvent: {}
+[11.352640] (-) TimerEvent: {}
+[11.453008] (-) TimerEvent: {}
+[11.553319] (-) TimerEvent: {}
+[11.653631] (-) TimerEvent: {}
+[11.754010] (-) TimerEvent: {}
+[11.854350] (-) TimerEvent: {}
+[11.954625] (-) TimerEvent: {}
+[12.054880] (-) TimerEvent: {}
+[12.072142] (demo_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cpp_node\x1b[0m\n'}
+[12.155028] (-) TimerEvent: {}
+[12.255401] (-) TimerEvent: {}
+[12.258683] (demo_cpp_pkg) StdoutLine: {'line': b'[100%] Built target cpp_node\n'}
+[12.269701] (demo_cpp_pkg) CommandEnded: {'returncode': 0}
+[12.269986] (demo_cpp_pkg) JobProgress: {'identifier': 'demo_cpp_pkg', 'progress': 'install'}
+[12.276658] (demo_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg'], 'cwd': '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,25680,0'), ('USER', 'lucky'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/lucky'), ('OLDPWD', '/home/lucky/Code/ros2'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucky'), ('NAME', 'LuckyDog'), ('WSL_INTEROP', '/run/WSL/17923_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin:/mnt/c/Program Files (x86)/STMicroelectronics/stlink_server:/mnt/c/Program Files/STM32CubeCLT_1.19.0:/mnt/c/Program Files/STM32CubeCLT_1.19.0/CMake/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/st-arm-clang/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/Ninja/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STLink-gdb-server/bin:/mnt/c/Program Files/STM32CubeCLT_1.19.0/STM32CubeProgrammer/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Sublime Text/sublime_text.exe:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.3.1/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/Lucky/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2025.2.2/bin:/mnt/c/Users/Lucky/AppData/Roaming/npm:/snap/bin'), ('WT_SESSION', 'e6587af0-c73b-4c52-b373-982782b4e41f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('TMUX_PANE', '%0'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble')]), 'shell': False}
+[12.280664] (demo_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.281101] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/lib/{PROJECT_NAME}/cpp_node\n'}
+[12.281313] (demo_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/lib/{PROJECT_NAME}/cpp_node" to ""\n'}
+[12.281708] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/demo_cpp_pkg\n'}
+[12.281894] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/demo_cpp_pkg\n'}
+[12.282250] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[12.282392] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[12.282513] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/path.sh\n'}
+[12.282655] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/path.dsv\n'}
+[12.282804] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.bash\n'}
+[12.282847] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.sh\n'}
+[12.282875] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.zsh\n'}
+[12.283082] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.dsv\n'}
+[12.283219] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/package.dsv\n'}
+[12.283254] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/ament_index/resource_index/packages/demo_cpp_pkg\n'}
+[12.283380] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/cmake/demo_cpp_pkgConfig.cmake\n'}
+[12.283585] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/cmake/demo_cpp_pkgConfig-version.cmake\n'}
+[12.283621] (demo_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/package.xml\n'}
+[12.285156] (demo_cpp_pkg) CommandEnded: {'returncode': 0}
+[12.292015] (demo_cpp_pkg) JobEnded: {'identifier': 'demo_cpp_pkg', 'rc': 0}
+[12.292425] (-) EventReactorShutdown: {}

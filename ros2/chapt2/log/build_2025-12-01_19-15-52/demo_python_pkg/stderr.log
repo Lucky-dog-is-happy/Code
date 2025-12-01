@@ -1,0 +1,6 @@
+  File "/home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg/person_node.py", line 1
+    Class PersonNode:
+          ^^^^^^^^^^
+SyntaxError: invalid syntax
+
+error: can't copy 'resource/demo_python_pkg': doesn't exist or not a regular file

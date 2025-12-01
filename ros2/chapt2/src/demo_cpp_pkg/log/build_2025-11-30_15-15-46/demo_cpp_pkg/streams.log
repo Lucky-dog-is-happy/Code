@@ -1,0 +1,26 @@
+[0.014s] Invoking command in '/home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg -- -j20 -l20
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o[0m
+[1.841s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[2.032s] [100%] Built target cpp_node
+[2.042s] Invoked command in '/home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg -- -j20 -l20
+[2.048s] Invoking command in '/home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg
+[2.053s] -- Install configuration: ""
+[2.053s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/lib/{PROJECT_NAME}/cpp_node
+[2.053s] -- Set runtime path of "/home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/lib/{PROJECT_NAME}/cpp_node" to ""
+[2.054s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/demo_cpp_pkg
+[2.054s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/demo_cpp_pkg
+[2.054s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.sh
+[2.054s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.dsv
+[2.055s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/path.sh
+[2.055s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/path.dsv
+[2.055s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.bash
+[2.055s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.sh
+[2.055s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.zsh
+[2.055s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.dsv
+[2.056s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/package.dsv
+[2.056s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/ament_index/resource_index/packages/demo_cpp_pkg
+[2.056s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/cmake/demo_cpp_pkgConfig.cmake
+[2.056s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/cmake/demo_cpp_pkgConfig-version.cmake
+[2.056s] -- Installing: /home/lucky/Code/ros2/cpp/demo_cpp_pkg/install/demo_cpp_pkg/share/demo_cpp_pkg/package.xml
+[2.057s] Invoked command in '/home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/lucky/Code/ros2/python/demo_python_pkg/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/lucky/Code/ros2/cpp/demo_cpp_pkg/build/demo_cpp_pkg
