@@ -1,0 +1,51 @@
+[0.018s] Invoking command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg -- -j20 -l20
+[0.076s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.173s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.350s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.352s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.357s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.366s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.377s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.406s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.408s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.800s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.848s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.906s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.906s] -- Configured cppcheck include dirs: 
+[7.906s] -- Configured cppcheck exclude dirs and/or files: 
+[7.907s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.908s] -- Added test 'lint_cmake' to check CMake code style
+[7.909s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.914s] -- Added test 'uncrustify' to check C / C++ code style
+[7.914s] -- Configured uncrustify additional arguments: 
+[7.915s] -- Added test 'xmllint' to check XML markup files
+[7.917s] -- Configuring done
+[7.929s] -- Generating done
+[7.932s] -- Build files have been written to: /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg
+[7.949s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[7.952s] [ 25%] [32mBuilding CXX object CMakeFiles/person_node.dir/src/person_node.cpp.o[0m
+[7.978s] [ 75%] Built target cpp_node
+[9.816s] [100%] [32m[1mLinking CXX executable person_node[0m
+[10.025s] [100%] Built target person_node
+[10.031s] Invoked command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg -- -j20 -l20
+[10.037s] Invoking command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg
+[10.041s] -- Install configuration: ""
+[10.042s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/lib/{PROJECT_NAME}/cpp_node
+[10.042s] -- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/lib/{PROJECT_NAME}/person_node
+[10.043s] -- Set runtime path of "/home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/lib/{PROJECT_NAME}/person_node" to ""
+[10.043s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/demo_cpp_pkg
+[10.043s] -- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/demo_cpp_pkg
+[10.044s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.sh
+[10.044s] -- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.dsv
+[10.044s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/path.sh
+[10.044s] -- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/path.dsv
+[10.044s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.bash
+[10.044s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.sh
+[10.044s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.zsh
+[10.044s] -- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/local_setup.dsv
+[10.044s] -- Installing: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/package.dsv
+[10.044s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/ament_index/resource_index/packages/demo_cpp_pkg
+[10.045s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/cmake/demo_cpp_pkgConfig.cmake
+[10.045s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/cmake/demo_cpp_pkgConfig-version.cmake
+[10.045s] -- Up-to-date: /home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg/share/demo_cpp_pkg/package.xml
+[10.046s] Invoked command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg

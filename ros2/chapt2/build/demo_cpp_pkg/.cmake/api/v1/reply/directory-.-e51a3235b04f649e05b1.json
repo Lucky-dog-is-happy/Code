@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 15,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 32,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
@@ -226,13 +226,25 @@
 		{
 			"backtrace" : 1,
 			"component" : "Unspecified",
-			"destination" : "lib/{PROJECT_NAME}",
+			"destination" : "lib/demo_cpp_pkg",
 			"paths" : 
 			[
 				"cpp_node"
 			],
 			"targetId" : "cpp_node::@6890427a1f51a3e7e1df",
 			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/demo_cpp_pkg",
+			"paths" : 
+			[
+				"person_node"
+			],
+			"targetId" : "person_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
 			"type" : "target"
 		},
 		{

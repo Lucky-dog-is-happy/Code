@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-0542e3b1a4c6155d88c7.json",
+					"jsonFile" : "directory-.-e51a3235b04f649e05b1.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -18,7 +18,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -35,7 +36,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -44,7 +46,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "cpp_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cpp_node-66860d7fbc3b8227d33e.json",
+					"jsonFile" : "target-cpp_node-b7b32258288dd08c257c.json",
 					"name" : "cpp_node",
 					"projectIndex" : 0
 				},
@@ -53,6 +55,13 @@
 					"id" : "demo_cpp_pkg_uninstall::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-demo_cpp_pkg_uninstall-caf270794192ab8bfa99.json",
 					"name" : "demo_cpp_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "person_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-person_node-3e6ae58745699150b8c6.json",
+					"name" : "person_node",
 					"projectIndex" : 0
 				},
 				{
