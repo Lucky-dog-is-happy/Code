@@ -1,0 +1,77 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg
+[35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[35m[1mConsolidate compiler generated dependencies of target person_node[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/person_node.dir/src/person_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o[0m
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kfuncion[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type; did you mean ‘[01m[Kfunction[m[K’?
+   10 |   void download(const std::string &host, const std::string &path, const std::[01;31m[Kfuncion[m[K<void(const std::string &, const std::string &)> &callback)
+      |                                                                              [01;31m[K^~~~~~~[m[K
+      |                                                                              [32m[Kfunction[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   10 |   void download(const std::string &host, const std::string &path, const std::funcion[01;31m[K<[m[Kvoid(const std::string &, const std::string &)> &callback)
+      |                                                                                     [01;31m[K^[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:[m[K In member function ‘[01m[Kvoid Download::download(const string&, const string&, int)[m[K’:
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:17:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalloc[m[K’?
+   17 |       [01;31m[Kcallback[m[K(path, response->body);
+      |       [01;31m[K^~~~~~~~[m[K
+      |       [32m[Kcalloc[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:[m[K In member function ‘[01m[Kvoid Download::start_download(const string&, const string&, const std::function<void(const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)>&)[m[K’:
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::placeholder[m[K’ has not been declared
+   23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::[01;31m[Kplaceholder[m[K::_2, std::placeholder::_3);
+      |                                                                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:112:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::placeholder[m[K’ has not been declared
+   23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::[01;31m[Kplaceholder[m[K::_3);
+      |                                                                                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:[m[K At global scope:
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:30:3:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KDownload[m[K’
+   30 |   [01;31m[KDownload[m[K download;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:36:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdownload[m[K’ does not name a type; did you mean ‘[01m[KDownload[m[K’?
+   36 |   [01;31m[Kdownload[m[K.start_download("http://localhost::8000", "/novel1.txt", download_finish_callback);
+      |   [01;31m[K^~~~~~~~[m[K
+      |   [32m[KDownload[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:37:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdownload[m[K’ does not name a type; did you mean ‘[01m[KDownload[m[K’?
+   37 |   [01;31m[Kdownload[m[K.start_download("http://localhost::8000", "/novel2.txt", download_finish_callback);
+      |   [01;31m[K^~~~~~~~[m[K
+      |   [32m[KDownload[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:38:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdownload[m[K’ does not name a type; did you mean ‘[01m[KDownload[m[K’?
+   38 |   [01;31m[Kdownload[m[K.start_download("http://localhost::8000", "/novel3.txt", download_finish_callback);
+      |   [01;31m[K^~~~~~~~[m[K
+      |   [32m[KDownload[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:39:30:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+   39 |   std::this_thread::sleep_for[01;31m[K([m[Kstd::chrono::milliseconds(1000 * 10));
+      |                              [01;31m[K^[m[K
+[01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:40:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   40 |   [01;31m[Kreturn[m[K 0;
+      |   [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/learn_thread.dir/build.make:76: CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/learn_thread.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 66%] [32m[1mLinking CXX executable person_node[0m
+[ 83%] [32m[1mLinking CXX executable cpp_node[0m
+[ 83%] Built target cpp_node
+[ 83%] Built target person_node
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,28 @@
+[0.007s] Invoking command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucky/Code/ros2/chapt2/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg -- -j20 -l20
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target learn_thread[0m
+[0.043s] [ 66%] Built target person_node
+[0.043s] [ 66%] Built target cpp_node
+[0.043s] [ 83%] [32mBuilding CXX object CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o[0m
+[0.696s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kfuncion[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type; did you mean ‘[01m[Kfunction[m[K’?
+[0.696s]    10 |   void download(const std::string &host, const std::string &path, const std::[01;31m[Kfuncion[m[K<void(const std::string &, const std::string &)> &callback)
+[0.696s]       |                                                                              [01;31m[K^~~~~~~[m[K
+[0.696s]       |                                                                              [32m[Kfunction[m[K
+[0.696s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[0.696s]    10 |   void download(const std::string &host, const std::string &path, const std::funcion[01;31m[K<[m[Kvoid(const std::string &, const std::string &)> &callback)
+[0.696s]       |                                                                                     [01;31m[K^[m[K
+[0.700s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:[m[K In member function ‘[01m[Kvoid Download::download(const string&, const string&, int)[m[K’:
+[0.700s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:17:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalloc[m[K’?
+[0.700s]    17 |       [01;31m[Kcallback[m[K(path, response->body);
+[0.700s]       |       [01;31m[K^~~~~~~~[m[K
+[0.700s]       |       [32m[Kcalloc[m[K
+[0.700s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:[m[K In member function ‘[01m[Kvoid Download::start_download(const string&, const string&, const std::function<void(const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)>&)[m[K’:
+[0.700s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::placeholder[m[K’ has not been declared
+[0.700s]    23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::[01;31m[Kplaceholder[m[K::_2, std::placeholder::_3);
+[0.700s]       |                                                                                          [01;31m[K^~~~~~~~~~~[m[K
+[0.700s] [01m[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:112:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::placeholder[m[K’ has not been declared
+[0.700s]    23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::[01;31m[Kplaceholder[m[K::_3);
+[0.700s]       |                                                                                                                [01;31m[K^~~~~~~~~~~[m[K
+[1.428s] gmake[2]: *** [CMakeFiles/learn_thread.dir/build.make:76: CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o] Error 1
+[1.428s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/learn_thread.dir/all] Error 2
+[1.428s] gmake: *** [Makefile:146: all] Error 2
+[1.429s] Invoked command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucky/Code/ros2/chapt2/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg -- -j20 -l20

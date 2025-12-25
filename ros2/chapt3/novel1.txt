@@ -1,0 +1,3 @@
+hello
+\nworld\n
+\my dear\n

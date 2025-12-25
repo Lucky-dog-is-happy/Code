@@ -10,12 +10,15 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 find_package(rclcpp REQUIRED)
+include_directories(include)
 add_executable(cpp_node src/cpp_node.cpp)
 add_executable(person_node src/person_node.cpp)
+add_executable(learn_thread src/learn_thread.cpp)
 ament_target_dependencies(cpp_node rclcpp)
 ament_target_dependencies(person_node rclcpp)
+ament_target_dependencies(learn_thread rclcpp)
 install(TARGETS
-  cpp_node person_node
+  cpp_node person_node learn_thread
   DESTINATION lib/${PROJECT_NAME}
   )
 

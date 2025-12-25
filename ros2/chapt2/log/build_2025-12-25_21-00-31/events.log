@@ -1,0 +1,172 @@
+[0.000000] (-) TimerEvent: {}
+[0.000127] (demo_cpp_pkg) JobQueued: {'identifier': 'demo_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000144] (demo_python_pkg) JobQueued: {'identifier': 'demo_python_pkg', 'dependencies': OrderedDict([('demo_cpp_pkg', '/home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg')])}
+[0.000155] (demo_cpp_pkg) JobStarted: {'identifier': 'demo_cpp_pkg'}
+[0.005693] (demo_cpp_pkg) JobProgress: {'identifier': 'demo_cpp_pkg', 'progress': 'cmake'}
+[0.006888] (demo_cpp_pkg) JobProgress: {'identifier': 'demo_cpp_pkg', 'progress': 'build'}
+[0.006932] (demo_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg', '--', '-j20', '-l20'], 'cwd': '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,472,0'), ('USER', 'lucky'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/lucky'), ('OLDPWD', '/home/lucky/Code/ros2/chapt2/src'), ('TERM_PROGRAM_VERSION', 'next-3.7'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucky/Code/ros2/chapt2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucky'), ('NAME', 'LuckyDog'), ('WSL_INTEROP', '/run/WSL/330_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'tmux-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Sublime Text/sublime_text.exe:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.3.1/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/c/Users/Lucky/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Lucky/AppData/Roaming/npm:/snap/bin'), ('WT_SESSION', '48eb9286-c298-4f1d-a664-1a203673e5dc'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/lucky/Code/ros2/chapt2/install/demo_python_pkg:/home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucky/Code/ros2/chapt2/install/demo_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('TMUX_PANE', '%0'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/lucky/Code/ros2/chapt2/install/demo_cpp_pkg:/home/lucky/Code/ros2/chapt2/install/demo_python_pkg:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.031456] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099449] (-) TimerEvent: {}
+[0.131759] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199544] (-) TimerEvent: {}
+[0.300093] (-) TimerEvent: {}
+[0.375128] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.377711] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.383029] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.392206] (demo_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400146] (-) TimerEvent: {}
+[0.406616] (demo_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.435235] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.437278] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500279] (-) TimerEvent: {}
+[0.600573] (-) TimerEvent: {}
+[0.700918] (-) TimerEvent: {}
+[0.801269] (-) TimerEvent: {}
+[0.901623] (-) TimerEvent: {}
+[1.001936] (-) TimerEvent: {}
+[1.102248] (-) TimerEvent: {}
+[1.202662] (-) TimerEvent: {}
+[1.303084] (-) TimerEvent: {}
+[1.403572] (-) TimerEvent: {}
+[1.503980] (-) TimerEvent: {}
+[1.604310] (-) TimerEvent: {}
+[1.704679] (-) TimerEvent: {}
+[1.805072] (-) TimerEvent: {}
+[1.905417] (-) TimerEvent: {}
+[2.005768] (-) TimerEvent: {}
+[2.106032] (-) TimerEvent: {}
+[2.206317] (-) TimerEvent: {}
+[2.306611] (-) TimerEvent: {}
+[2.406949] (-) TimerEvent: {}
+[2.507482] (-) TimerEvent: {}
+[2.608000] (-) TimerEvent: {}
+[2.708529] (-) TimerEvent: {}
+[2.808830] (-) TimerEvent: {}
+[2.909150] (-) TimerEvent: {}
+[3.009462] (-) TimerEvent: {}
+[3.109748] (-) TimerEvent: {}
+[3.210044] (-) TimerEvent: {}
+[3.310342] (-) TimerEvent: {}
+[3.410614] (-) TimerEvent: {}
+[3.510885] (-) TimerEvent: {}
+[3.611153] (-) TimerEvent: {}
+[3.711475] (-) TimerEvent: {}
+[3.811734] (-) TimerEvent: {}
+[3.912004] (-) TimerEvent: {}
+[4.012250] (-) TimerEvent: {}
+[4.112668] (-) TimerEvent: {}
+[4.212990] (-) TimerEvent: {}
+[4.313262] (-) TimerEvent: {}
+[4.413513] (-) TimerEvent: {}
+[4.513775] (-) TimerEvent: {}
+[4.614052] (-) TimerEvent: {}
+[4.714357] (-) TimerEvent: {}
+[4.814642] (-) TimerEvent: {}
+[4.914975] (-) TimerEvent: {}
+[5.015383] (-) TimerEvent: {}
+[5.115669] (-) TimerEvent: {}
+[5.215968] (-) TimerEvent: {}
+[5.316319] (-) TimerEvent: {}
+[5.416633] (-) TimerEvent: {}
+[5.516966] (-) TimerEvent: {}
+[5.617242] (-) TimerEvent: {}
+[5.717573] (-) TimerEvent: {}
+[5.817904] (-) TimerEvent: {}
+[5.918183] (-) TimerEvent: {}
+[5.937985] (demo_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.983090] (demo_cpp_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.018246] (-) TimerEvent: {}
+[6.036672] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.036875] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/include\n'}
+[6.036930] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.037651] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.038668] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.039495] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.042247] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.042313] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.042884] (demo_cpp_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.044340] (demo_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.055267] (demo_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[6.058175] (demo_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg\n'}
+[6.073886] (demo_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[6.074043] (demo_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_node\x1b[0m\n'}
+[6.079179] (demo_cpp_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o\x1b[0m\n'}
+[6.083228] (demo_cpp_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/person_node.dir/src/person_node.cpp.o\x1b[0m\n'}
+[6.083649] (demo_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o\x1b[0m\n'}
+[6.118383] (-) TimerEvent: {}
+[6.218667] (-) TimerEvent: {}
+[6.318970] (-) TimerEvent: {}
+[6.419260] (-) TimerEvent: {}
+[6.519658] (-) TimerEvent: {}
+[6.620102] (-) TimerEvent: {}
+[6.720586] (-) TimerEvent: {}
+[6.820831] (-) TimerEvent: {}
+[6.921133] (-) TimerEvent: {}
+[6.995410] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfuncion\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99 does not name a template type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kfunction\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.995635] (demo_cpp_pkg) StderrLine: {'line': b'   10 |   void download(const std::string &host, const std::string &path, const std::\x1b[01;31m\x1b[Kfuncion\x1b[m\x1b[K<void(const std::string &, const std::string &)> &callback)\n'}
+[6.995702] (demo_cpp_pkg) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.995758] (demo_cpp_pkg) StderrLine: {'line': b'      |                                                                              \x1b[32m\x1b[Kfunction\x1b[m\x1b[K\n'}
+[6.995812] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K<\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.995894] (demo_cpp_pkg) StderrLine: {'line': b'   10 |   void download(const std::string &host, const std::string &path, const std::funcion\x1b[01;31m\x1b[K<\x1b[m\x1b[Kvoid(const std::string &, const std::string &)> &callback)\n'}
+[6.995966] (demo_cpp_pkg) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.002414] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Download::download(const string&, const string&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.002558] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:17:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcallback\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcalloc\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.002599] (demo_cpp_pkg) StderrLine: {'line': b'   17 |       \x1b[01;31m\x1b[Kcallback\x1b[m\x1b[K(path, response->body);\n'}
+[7.002626] (demo_cpp_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.002659] (demo_cpp_pkg) StderrLine: {'line': b'      |       \x1b[32m\x1b[Kcalloc\x1b[m\x1b[K\n'}
+[7.002682] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Download::start_download(const string&, const string&, const std::function<void(const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.002707] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholder\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[7.002731] (demo_cpp_pkg) StderrLine: {'line': b'   23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::\x1b[01;31m\x1b[Kplaceholder\x1b[m\x1b[K::_2, std::placeholder::_3);\n'}
+[7.002754] (demo_cpp_pkg) StderrLine: {'line': b'      |                                                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.002775] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:112:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholder\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[7.002799] (demo_cpp_pkg) StderrLine: {'line': b'   23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::\x1b[01;31m\x1b[Kplaceholder\x1b[m\x1b[K::_3);\n'}
+[7.002819] (demo_cpp_pkg) StderrLine: {'line': b'      |                                                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.002839] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.002860] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:30:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[KDownload\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.002880] (demo_cpp_pkg) StderrLine: {'line': b'   30 |   \x1b[01;31m\x1b[KDownload\x1b[m\x1b[K download;\n'}
+[7.002900] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.003877] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:36:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdownload\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDownload\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.003969] (demo_cpp_pkg) StderrLine: {'line': b'   36 |   \x1b[01;31m\x1b[Kdownload\x1b[m\x1b[K.start_download("http://localhost::8000", "/novel1.txt", download_finish_callback);\n'}
+[7.003998] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.004021] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[32m\x1b[KDownload\x1b[m\x1b[K\n'}
+[7.004367] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:37:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdownload\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDownload\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.004430] (demo_cpp_pkg) StderrLine: {'line': b'   37 |   \x1b[01;31m\x1b[Kdownload\x1b[m\x1b[K.start_download("http://localhost::8000", "/novel2.txt", download_finish_callback);\n'}
+[7.004458] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.004481] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[32m\x1b[KDownload\x1b[m\x1b[K\n'}
+[7.004970] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:38:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdownload\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDownload\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.005080] (demo_cpp_pkg) StderrLine: {'line': b'   38 |   \x1b[01;31m\x1b[Kdownload\x1b[m\x1b[K.start_download("http://localhost::8000", "/novel3.txt", download_finish_callback);\n'}
+[7.005140] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.005244] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[32m\x1b[KDownload\x1b[m\x1b[K\n'}
+[7.005281] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:39:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.005309] (demo_cpp_pkg) StderrLine: {'line': b'   39 |   std::this_thread::sleep_for\x1b[01;31m\x1b[K(\x1b[m\x1b[Kstd::chrono::milliseconds(1000 * 10));\n'}
+[7.005333] (demo_cpp_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.005355] (demo_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:40:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.005379] (demo_cpp_pkg) StderrLine: {'line': b'   40 |   \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K 0;\n'}
+[7.005400] (demo_cpp_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.021283] (-) TimerEvent: {}
+[7.121568] (-) TimerEvent: {}
+[7.221866] (-) TimerEvent: {}
+[7.322156] (-) TimerEvent: {}
+[7.422445] (-) TimerEvent: {}
+[7.522803] (-) TimerEvent: {}
+[7.623126] (-) TimerEvent: {}
+[7.723508] (-) TimerEvent: {}
+[7.823878] (-) TimerEvent: {}
+[7.912821] (demo_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/learn_thread.dir/build.make:76: CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o] Error 1\n'}
+[7.912963] (demo_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/learn_thread.dir/all] Error 2\n'}
+[7.912990] (demo_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[7.923975] (-) TimerEvent: {}
+[8.024275] (-) TimerEvent: {}
+[8.124551] (-) TimerEvent: {}
+[8.224841] (-) TimerEvent: {}
+[8.245532] (demo_cpp_pkg) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable person_node\x1b[0m\n'}
+[8.262560] (demo_cpp_pkg) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable cpp_node\x1b[0m\n'}
+[8.324945] (-) TimerEvent: {}
+[8.406306] (demo_cpp_pkg) StdoutLine: {'line': b'[ 83%] Built target cpp_node\n'}
+[8.406431] (demo_cpp_pkg) StdoutLine: {'line': b'[ 83%] Built target person_node\n'}
+[8.407439] (demo_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.408923] (demo_cpp_pkg) CommandEnded: {'returncode': 2}
+[8.415358] (demo_cpp_pkg) JobEnded: {'identifier': 'demo_cpp_pkg', 'rc': 2}
+[8.425117] (-) TimerEvent: {}
+[8.425785] (demo_python_pkg) JobSkipped: {'identifier': 'demo_python_pkg'}
+[8.425985] (-) EventReactorShutdown: {}

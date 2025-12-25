@@ -1,0 +1,52 @@
+[0.008s] Invoking command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucky/Code/ros2/chapt2/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg -- -j20 -l20
+[0.058s] Consolidate compiler generated dependencies of target learn_thread
+[0.060s] Consolidate compiler generated dependencies of target person_node
+[0.063s] Consolidate compiler generated dependencies of target cpp_node
+[0.065s] [ 16%] Building CXX object CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o
+[0.067s] [ 50%] Built target person_node
+[0.070s] [ 83%] Built target cpp_node
+[0.763s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:78: error: ‘funcion’ in namespace ‘std’ does not name a template type; did you mean ‘function’?
+[0.763s]    10 |   void download(const std::string &host, const std::string &path, const std::funcion<void(const std::string &, const std::string &)> &callback)
+[0.763s]       |                                                                              ^~~~~~~
+[0.763s]       |                                                                              function
+[0.763s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:85: error: expected ‘,’ or ‘...’ before ‘<’ token
+[0.763s]    10 |   void download(const std::string &host, const std::string &path, const std::funcion<void(const std::string &, const std::string &)> &callback)
+[0.763s]       |                                                                                     ^
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp: In member function ‘void Download::download(const string&, const string&, int)’:
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:17:7: error: ‘callback’ was not declared in this scope; did you mean ‘calloc’?
+[0.767s]    17 |       callback(path, response->body);
+[0.767s]       |       ^~~~~~~~
+[0.767s]       |       calloc
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp: In member function ‘void Download::start_download(const string&, const string&, const std::function<void(const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)>&)’:
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:90: error: ‘std::placeholder’ has not been declared
+[0.767s]    23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::placeholder::_3);
+[0.767s]       |                                                                                          ^~~~~~~~~~~
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:112: error: ‘std::placeholder’ has not been declared
+[0.767s]    23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::placeholder::_3);
+[0.767s]       |                                                                                                                ^~~~~~~~~~~
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp: At global scope:
+[0.767s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:30:3: error: expected initializer before ‘Download’
+[0.768s]    30 |   Download download;
+[0.768s]       |   ^~~~~~~~
+[0.768s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:36:3: error: ‘download’ does not name a type; did you mean ‘Download’?
+[0.768s]    36 |   download.start_download("http://localhost::8000", "/novel1.txt", download_finish_callback);
+[0.768s]       |   ^~~~~~~~
+[0.768s]       |   Download
+[0.769s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:37:3: error: ‘download’ does not name a type; did you mean ‘Download’?
+[0.769s]    37 |   download.start_download("http://localhost::8000", "/novel2.txt", download_finish_callback);
+[0.769s]       |   ^~~~~~~~
+[0.769s]       |   Download
+[0.769s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:38:3: error: ‘download’ does not name a type; did you mean ‘Download’?
+[0.769s]    38 |   download.start_download("http://localhost::8000", "/novel3.txt", download_finish_callback);
+[0.769s]       |   ^~~~~~~~
+[0.769s]       |   Download
+[0.769s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:39:30: error: expected constructor, destructor, or type conversion before ‘(’ token
+[0.769s]    39 |   std::this_thread::sleep_for(std::chrono::milliseconds(1000 * 10));
+[0.769s]       |                              ^
+[0.769s] /home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:40:3: error: expected unqualified-id before ‘return’
+[0.769s]    40 |   return 0;
+[0.769s]       |   ^~~~~~
+[1.482s] gmake[2]: *** [CMakeFiles/learn_thread.dir/build.make:76: CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o] Error 1
+[1.482s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/learn_thread.dir/all] Error 2
+[1.482s] gmake: *** [Makefile:146: all] Error 2
+[1.483s] Invoked command in '/home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucky/Code/ros2/chapt2/install/demo_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucky/Code/ros2/chapt2/build/demo_cpp_pkg -- -j20 -l20

@@ -1,0 +1,50 @@
+Consolidate compiler generated dependencies of target learn_thread
+Consolidate compiler generated dependencies of target person_node
+Consolidate compiler generated dependencies of target cpp_node
+[ 16%] Building CXX object CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o
+[ 50%] Built target person_node
+[ 83%] Built target cpp_node
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:78: error: ‘funcion’ in namespace ‘std’ does not name a template type; did you mean ‘function’?
+   10 |   void download(const std::string &host, const std::string &path, const std::funcion<void(const std::string &, const std::string &)> &callback)
+      |                                                                              ^~~~~~~
+      |                                                                              function
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:10:85: error: expected ‘,’ or ‘...’ before ‘<’ token
+   10 |   void download(const std::string &host, const std::string &path, const std::funcion<void(const std::string &, const std::string &)> &callback)
+      |                                                                                     ^
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp: In member function ‘void Download::download(const string&, const string&, int)’:
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:17:7: error: ‘callback’ was not declared in this scope; did you mean ‘calloc’?
+   17 |       callback(path, response->body);
+      |       ^~~~~~~~
+      |       calloc
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp: In member function ‘void Download::start_download(const string&, const string&, const std::function<void(const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)>&)’:
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:90: error: ‘std::placeholder’ has not been declared
+   23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::placeholder::_3);
+      |                                                                                          ^~~~~~~~~~~
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:23:112: error: ‘std::placeholder’ has not been declared
+   23 |     auto download_fun = std::bind(&Download::download, this, std::placeholders::_1, std::placeholder::_2, std::placeholder::_3);
+      |                                                                                                                ^~~~~~~~~~~
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp: At global scope:
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:30:3: error: expected initializer before ‘Download’
+   30 |   Download download;
+      |   ^~~~~~~~
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:36:3: error: ‘download’ does not name a type; did you mean ‘Download’?
+   36 |   download.start_download("http://localhost::8000", "/novel1.txt", download_finish_callback);
+      |   ^~~~~~~~
+      |   Download
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:37:3: error: ‘download’ does not name a type; did you mean ‘Download’?
+   37 |   download.start_download("http://localhost::8000", "/novel2.txt", download_finish_callback);
+      |   ^~~~~~~~
+      |   Download
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:38:3: error: ‘download’ does not name a type; did you mean ‘Download’?
+   38 |   download.start_download("http://localhost::8000", "/novel3.txt", download_finish_callback);
+      |   ^~~~~~~~
+      |   Download
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:39:30: error: expected constructor, destructor, or type conversion before ‘(’ token
+   39 |   std::this_thread::sleep_for(std::chrono::milliseconds(1000 * 10));
+      |                              ^
+/home/lucky/Code/ros2/chapt2/src/demo_cpp_pkg/src/learn_thread.cpp:40:3: error: expected unqualified-id before ‘return’
+   40 |   return 0;
+      |   ^~~~~~
+gmake[2]: *** [CMakeFiles/learn_thread.dir/build.make:76: CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/learn_thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

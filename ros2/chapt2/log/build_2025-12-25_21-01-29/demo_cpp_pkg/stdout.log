@@ -1,0 +1,6 @@
+Consolidate compiler generated dependencies of target learn_thread
+Consolidate compiler generated dependencies of target person_node
+Consolidate compiler generated dependencies of target cpp_node
+[ 16%] Building CXX object CMakeFiles/learn_thread.dir/src/learn_thread.cpp.o
+[ 50%] Built target person_node
+[ 83%] Built target cpp_node
