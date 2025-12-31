@@ -1,23 +1,18 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char **argv)
 {
-	int sum = 0, i = 0;
-	char input[5];
-
-	while (1) {
-	sum = 0;
-	scanf("%s", input);
-	for (i = 0; input[i] != '\0'; i++) {
-		if (input[i] < '0' || input[i] > '9') {
-			printf("Invalid input!\n");
-			sum = -1;
-			break;
-		}
-		sum = sum*10 + input[i] - '0';
-	}
-	printf("input=%d\n", sum);
+	int a;
+	
+	a = 10;
+	printf("hello world \n");
+	
+	a = 20;
+	
+	return 0;
 }
 
-	return 0;
+int func(int a)
+{
+
 }

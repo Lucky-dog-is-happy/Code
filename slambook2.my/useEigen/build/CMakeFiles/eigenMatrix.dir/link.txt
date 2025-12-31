@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/eigenMatrix.dir/link.d CMakeFiles/eigenMatrix.dir/eigenMatrix.cc.o -o eigenMatrix
