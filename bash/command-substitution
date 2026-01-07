@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+whoami
+thing=`uname`
+echo "thing is $thing"
+
+echo `echo \`whoami\``
+
+echo $(whoami)
+echo $(echo $(echo $(whoami)))

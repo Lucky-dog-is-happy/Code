@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+array=(foo bar baz)
+
+{
+	IFS=,
+	echo "${array[*]}"
+}

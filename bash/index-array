@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+array=(forr bar baz)
+echo $array # only the first
+
+echo "${array[0]}"
+echo "${array[1]}"
+echo "${array[2]}"
+echo "${array[3]}"
+echo "${array[-1]}"
+echo "${array[-2]}"
+
+idx=1
+
+echo "${array[$idx]}"
+echo ""
+echo "${array[*]}" # the whole
+echo "{$array[@]}" # can be single
+
+newarray=(${array[@]} body foot)
+newarray+=(brain hand)
+
+for i in "${newarray[@]}"; do
+	echo "i is $i"
+done
+
+echo ${#newarray[@]}
