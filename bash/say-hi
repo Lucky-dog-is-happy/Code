@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# . ./say-hi-function || exit 1
+
+libdirs=./
+. -p "$libdirs" say-hi-function
+
+greet dog
+greet foo
+goodbye bar

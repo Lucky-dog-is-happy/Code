@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+. ./say-hi-function || exit 1
+
+name="lucky"
+greet dave
+echo "$name"
+
+goodbye dave
+echo "$name"
