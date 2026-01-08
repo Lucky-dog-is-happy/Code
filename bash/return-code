@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+my-func() {
+	echo "YSAP" >&2
+	return 255
+}
+
+var=$(my-func 2>&1) 
+code=$?
+echo "var=$var, code=$code"
+
