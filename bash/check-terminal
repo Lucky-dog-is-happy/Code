@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [[ -t 1 ]]; then
+	tput setaf 2
+	echo "isatty"
+else 
+	echo "isnotatty"
+fi

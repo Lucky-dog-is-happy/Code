@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# save the cursors 
+printf '\e7'
+# jump somewhere
+printf '\e[20;20H'
+# printf hello world
+printf "Hello world"
+# restore the cursor
+printf '\e8'

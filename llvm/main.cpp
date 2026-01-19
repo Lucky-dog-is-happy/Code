@@ -1,4 +1,8 @@
 #include <iostream>
+#include <memory>
+#include <utility>
+#include <vector>
+#include <map>
 
 enum Token {
     tok_eof = -1,
@@ -19,12 +23,114 @@ static int gettok()
 {
     static int LastChar = ' ';
 
+    // skip white
     while(isspace(LastChar)) LastChar = getchar();
 
+    // keyword and identifier
     if(isalpha(LastChar)) {
-        Identifierstr = LastChar;
-        while(isalnum(LastChar = getchar())) IdentifierStr += Lastchar;
+        IdentifierStr = LastChar;
+        while(isalnum(LastChar = getchar())) IdentifierStr += LastChar;
 
-        if
+	// keyword
+        if(IdentifierStr == "def") return tok_def;
+	if(IdentifierStr == "extern") return tok_extern;
+
+	// identifier
+	return tok_identifier;
   }
+
+    // number
+    if(isdigit(LastChar) || LastChar == '.') {
+	std::string NumStr;
+	do {
+		NumStr += LastChar;
+		LastChar = getchar();
+	} while(isdigit(LastChar) || LastChar == '.');
+
+  	NumVal = strtod(NumStr.c_str(), 0);
+    	return tok_number;
+    }
+
+    // comment
+    if(LastChar == '#') {
+	do LastChar = getchar();
+	while(LastChar != EOF && LastChar != '\n' && LastChar != '\r');
+
+	if(LastChar != EOF) return gettok();
+    }
+
+    // end
+    if(LastChar == EOF) return tok_eof;
+
+    // other
+    int ThisChar = LastChar;
+    LastChar = getchar();
+    return ThisChar;
+}
+
+// AST
+class ExprAST {
+public:
+	virtual -ExprAST() = default;
+};
+
+class NumberExprAST : public ExprAST {
+	double Val;
+
+public:
+	NumberExprAST(double Val):Val(VAL){}
+};
+
+class VariableExprAST : public ExprAST {
+	std::string Name;
+
+public:
+	VariableExprAST(const std::string& name):Name(Name){}
+};
+
+class BinaryExprAst : public ExprAST {
+    char Op;
+    std::unique_ptr<ExprAST> LHS, RHS;
+
+public:
+    BinaryExprAST(char Op, std::unique_prt<ExprAST> LHS, std::unique_ptr<ExprAST> RHS):
+        Op(Op), LHS(std::move(LHS)), RHS(std::move(RHS)) {}
+};
+
+class CallExprAST : public ExprAST {
+    std::string Callee;
+    std::vector<std::unique_ptr<ExprAST>> Args;
+
+public:
+    CallExprAST(const std::string& Callee, std::vector<std::unique_ptr<ExprAST>> Args):
+        Callee(Callee), Args(std::move(Args)) {};
+};
+
+class PrototypeAST {
+    std::string Name;
+    std::vector<std::string> Args;
+
+public:
+    PrototyprAST(const std::string& Name, std::vector<std::string> Args):
+        Name(Name), Args(std::move(Args)) {};
+};
+
+class FunctionAST {
+    std::unique_ptr<PrototypeAST> Proto;
+    std::unique_ptr<ExprAST> Body;
+
+public:
+    FuncitonAST(std::unique_ptr<PrototypeAST> Proto, std::unique_ptr<ExprAST> Body):
+        Proto(std::move(Proto)), Body(std::move(Body)) {}
+};
+
+int main()
+{
+	int Tok;
+	do {
+		Tok = gettok();
+		std::cout<<Tok<<std::endl;
+	} while(Tok != tok_eof);
+
+	return 0;
 }
