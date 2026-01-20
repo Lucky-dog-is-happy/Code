@@ -14,5 +14,5 @@ int main(int argc, char **argv)
 
 int func(int a)
 {
-
+    return a;
 }
