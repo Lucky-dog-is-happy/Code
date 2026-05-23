@@ -1,0 +1,10 @@
+../Core/Src/main.c:84:9:HC_SR501_Read_State	16	static
+../Core/Src/main.c:93:16:SPI_Read_Byte	16	static
+../Core/Src/main.c:101:6:HAL_TIM_PeriodElapsedCallback	24	static
+../Core/Src/main.c:121:9:INMP441_Read_Audio	16	static
+../Core/Src/main.c:140:10:INMP441_ReadBuf	24	static
+../Core/Src/main.c:151:6:USART2_Send_Data	16	static
+../Core/Src/main.c:162:1:__io_putchar	16	static
+../Core/Src/main.c:173:5:main	248	static
+../Core/Src/main.c:257:6:SystemClock_Config	72	static
+../Core/Src/main.c:298:6:Error_Handler	4	static,ignoring_inline_asm
